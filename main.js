@@ -7,7 +7,7 @@ e.preventDefault();
 const campoA = document.getElementById('campo-a')
 const campoB = document.getElementById('campo-b')
 
-if (campoA.value >= campoB.value) {
+if (campoA.valueAsNumber  >= campoB.valueAsNumber ) {
     alert ('O Campo B é menor ou igual o Campo A');
 }else{
     alert ('Enviado com Sucesso!');

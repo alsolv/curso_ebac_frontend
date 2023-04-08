@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif ;
+}
+
+header {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+header h1 {
+height: 35px;
+font-weight: bold;
+margin-bottom: 35px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.itens{
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+}
+
+form{
+display: flex;
+justify-content: center;
+margin-bottom: 30px;
+
+}
+
+form button {
+background-color: salmon;
+color: #fff;
+font-weight: bold;
+font-size: 15px;
+border:none;
+cursor: pointer;
+padding: 10px;
+border-radius: 15px;
+margin-left: 10px;
+}
+
+form input {
+font-size: 20px;
+background-color: #fff;
+border: none;
+padding: 8px;
+border-bottom: 2px solid salmon;
+border-radius: 10px;
+}
+
+ul{
+    width: 100%;
+
+}
+
+ul li{
+    font-size: 25px;
+    padding:5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+
+.tarefaConcluida{
+    text-decoration:line-through;
+    color: salmon;
+}
+.remove-tareda{
+    text-decoration:none;
+}

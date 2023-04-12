@@ -3,22 +3,21 @@ $(document).ready(function(){
     $('form').on('submit', function(e){
         e.preventDefault();
 
-    const NovaTarefa = $('#taskName').val();
-    const NovoItem = $('<li> </li>');
+    const novaTarefa = $('#taskName').val();
+    const novoItem = $('<li title="1 Clique conclui a Tarefa, 2 Cliques Exclui">x</li>');
 
-    $(`<li>${NovaTarefa}</li>`).appendTo(NovoItem);
-    $(NovoItem).appendTo("ul");
+    $(`<li>${novaTarefa}</li>`).appendTo(novoItem);
+    $(novoItem).appendTo("ul");     
 
     $("#taskName").val('');
 
 });
 
     $(".itens").on("click", "li", function(){
-    $(this).addClass("tarefaConcluida");
-});
-    $("li").on("click", "li", function(){
-    $(this).removeClass("remove-tareda");
-    
+    $(this).addClass("tarefa-concluida");
 
+    $("li").dblclick(function(){
+        $(this).hide();
+});
 });
 });

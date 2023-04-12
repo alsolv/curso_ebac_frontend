@@ -70,10 +70,7 @@ ul li{
 }
 
 
-.tarefaConcluida{
+.tarefa-concluida{
     text-decoration:line-through;
     color: salmon;
-}
-.remove-tareda{
-    text-decoration:none;
 }
